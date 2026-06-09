@@ -10,7 +10,7 @@ export class ProdutoController {
       const produtos = await prisma.produto.findMany({
         where: {
           ...(busca && {
-            nome: { contains: String(busca), mode: "insensitive" },
+            nome: { contains: String(busca) },
           }),
           ...(categoriaId && { categoriaId: String(categoriaId) }),
         },
