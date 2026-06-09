@@ -1,4 +1,4 @@
-const DEFAULT_JWT_SECRET = "proestoque-jwt-secret-super-longa-e-segura-troque-em-producao";
+const DEFAULT_JWT_SECRET = "!@3dU12!@";
 
 export const config = {
   port: Number(process.env.PORT ?? 3333),
